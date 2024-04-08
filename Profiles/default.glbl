@@ -5,22 +5,22 @@
    <tag></tag>
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Required : Obtain your Vansah Connect URL from Vansah Settings > Vansah API Tokens </description>
       <initValue>'https://prod.vansahnode.app'</initValue>
       <name>Vansah_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Optional : Provide your Sprint Name</description>
       <initValue>'SM Sprint 1'</initValue>
       <name>SprintName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Optional : Provide your Release Name</description>
       <initValue>'Release 24'</initValue>
       <name>ReleaseName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Optional : Provide your Environment Name</description>
       <initValue>'UAT'</initValue>
       <name>EnvironmentName</name>
    </GlobalVariableEntity>
