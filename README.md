@@ -1,6 +1,6 @@
 # Katalon Integration with Vansah Test Management for Jira
 
-This tutorial guides you through the process of integrating Katalon WebUI tests with Vansah Test Management for Jira to automatically send test case results. 
+This tutorial guides you through the process of integrating Katalon WebUI tests with Vansah Test Management for Jira. Integrating Katalon with Vansah will allow you to send Test Case results from Katalon to your Jira workspace.
 
 By following this setup, you can streamline your testing workflow, ensuring that test outcomes are recorded directly in your Jira workspace.
 
