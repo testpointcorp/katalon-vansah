@@ -18,14 +18,14 @@ setx VANSAH_TOKEN "your_vansah_api_token_here"
 ```
 For macOS
 ```bash
-echo 'export VANSAH_TOKEN="your_vansah_api_token_here"' >> ~/.bash_profile
+echo export VANSAH_TOKEN="your_vansah_api_token_here" >> ~/.bash_profile
 
 source ~/.bash_profile
 
 ```
 For Linux (Ubuntu, Debian, etc.)
 ```bash
-echo 'export VANSAH_TOKEN="your_vansah_api_token_here"' >> ~/.bashrc
+echo export VANSAH_TOKEN="your_vansah_api_token_here" >> ~/.bashrc
 
 source ~/.bashrc
 
@@ -36,7 +36,7 @@ To enable Vansah integration in any WebUI Katalon project, follow these steps:
 
 1. **Place the VansahBinding.java File**: Ensure that [`VansahBinding.java`](/Include/scripts/groovy/VansahBinding.java) is located in the `Include/scripts/groovy` directory of your project.
 
-2. **Add the Vansah Test Listener**: Add or Create **@AfterTestCase`** listener so that after running each Test Case we can send the test results of the same test Case to Vansah.
+2. **Add the Vansah Test Listener**: Add or Create **@AfterTestCase** listener so that after running each Test Case we can send the test results of the same test Case to Vansah.
 
    Ex: [`VansahListeners.groovy`](Test%20Listeners/VansahListeners.groovy)
    ```groovy
