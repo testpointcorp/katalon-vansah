@@ -59,7 +59,7 @@ To enable Vansah integration in any WebUI Katalon project, follow these steps:
             def assetKey = vansahData.get("Asset")
         
             VansahBinding vb = new VansahBinding();
-           vb.sendResultstoVansah(testCaseKey, assetKey, testCaseContext.getTestCaseStatus());
+            vb.sendResultstoVansah(testCaseKey, assetKey, testCaseContext.getTestCaseStatus());
         }
       }
 
