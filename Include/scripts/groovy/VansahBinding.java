@@ -70,7 +70,7 @@ public class VansahBinding {
         httpPost.addHeader("Content-Type", "application/json");
 
         try {
-            String requestBody = requestBodyJSON(testCaseKey, assetKey, result).toString();
+            String requestBody = requestBodyJSON(testCaseKey, assetKey, filterResult(result)).toString();
             StringEntity entity = new StringEntity(requestBody);
             httpPost.setEntity(entity);
 
@@ -108,7 +108,7 @@ public class VansahBinding {
      * @param result      The result of the test run.
      * @return The JSON request body.
      */
-    public JSONObject requestBodyJSON(String testCaseKey, String asset, String result) {
+    private JSONObject requestBodyJSON(String testCaseKey, String asset, String result) {
         JSONObject requestBody = new JSONObject();
         JSONObject caseObject = new JSONObject();
         JSONObject assetObject = new JSONObject();
@@ -160,9 +160,25 @@ public class VansahBinding {
      * @param key The key to check.
      * @return {@code true} if the key is an issue key, {@code false} otherwise.
      */
-    public boolean isIssueKey(String key) {
+    private boolean isIssueKey(String key) {
         // Check if the key matches the pattern of an Issue Key (e.g., "ABC-123")
         return Pattern.matches("[A-Z]+-[0-9]+", key);
     }
+    
+    /**
+     * Filters the input result to determine its status.
+     *
+     * @param result The input result to be filtered. This should be a string representing the status of a test or evaluation.
+     * @return A string representing the filtered status of the input result. If the input result is "passed" (case-insensitive), the method returns "passed". Otherwise, it returns "failed".
+     */
+    private String filterResult(String result) {
+        if(result.toLowerCase().equals("passed")) {
+            return "passed";
+        } else {
+            return "failed";
+        }
+    }
+    
+    
 
 }
