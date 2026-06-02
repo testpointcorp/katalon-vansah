@@ -22,7 +22,7 @@ public class VansahBinding {
     /**
      * The version of the Vansah API.
      */
-    private String apiVersion = "v1";
+    private String apiVersion = "v2";
 
     /**
      * The endpoint URL for adding a test run.
