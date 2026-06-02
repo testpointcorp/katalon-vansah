@@ -78,7 +78,7 @@ To enable Vansah integration in any WebUI Katalon project, follow these steps:
     ```xml
     <GlobalVariableEntity>
       <description>Required : Obtain your Vansah Connect URL from Vansah Settings > Vansah API Tokens </description>
-      <initValue>'https://prod.vansahnode.app'</initValue>
+      <initValue>'https://prod.vansah.com'</initValue>
       <name>Vansah_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
